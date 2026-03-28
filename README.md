@@ -1,18 +1,20 @@
-# 📊 Trader Behavior Analysis using Market Sentiment
+#  Trader Behavior & Sentiment Analysis
 
-## 📌 Overview
-This project analyzes the relationship between Bitcoin market sentiment (Fear & Greed Index) and trader performance using historical trading data.
-The goal is to uncover patterns in trading behavior and identify strategies for better decision-making.
+##  Project Overview
+This project analyzes how market sentiment (Fear vs Greed) influences trader behavior and performance using real trading data from Hyperliquid.
 
-
-
-## 📂 Datasets Used
-1. Historical Trader Data  
-2. Bitcoin Fear & Greed Index  
+The objective is to uncover patterns in trading decisions and identify strategies for improved profitability.
 
 
+## Datasets Used
+1. **Bitcoin Fear & Greed Index**
+   - Date, Classification (Fear/Greed)
 
-## ⚙️ Tools & Technologies
+2. **Historical Trader Data**
+   - Account, Price, Size, Side, PnL, Timestamp, etc.
+
+
+## Tools & Technologies
 - Python
 - Pandas
 - Matplotlib
@@ -20,36 +22,52 @@ The goal is to uncover patterns in trading behavior and identify strategies for 
 
 
 
-## 🔍 Analysis Performed
-- Merged trading data with market sentiment
-- Calculated total and average profit across sentiments
-- Analyzed trading activity under different market conditions
-- Studied buy/sell behavior patterns
+##  Data Preparation
+- Loaded and cleaned both datasets
+- Handled missing values and duplicates
+- Converted timestamps to date format
+- Merged datasets based on date
 
 
 
-## 📊 Key Insights
-- Traders earn the highest total profit during **Fear** conditions
-- Extreme Fear shows lowest profitability, indicating higher risk
-- Greed phases do not always guarantee higher profits
-- Contrarian strategies (buy in fear, sell in greed) may be effective
+##  Key Metrics Created
+- Daily PnL per trader
+- Average trade size
+- Trade frequency
+- Win rate
+- Trader segmentation (High vs Low profit)
 
 
 
-## 📈 Visualization
-Bar chart showing total profit vs market sentiment.
+##  Analysis Performed
+- Profitability vs market sentiment
+- Trading activity across sentiment phases
+- Buy/Sell behavior patterns
+- Segment-wise performance analysis
 
 
 
-## 🚀 Conclusion
-Market sentiment plays a crucial role in trading performance. Traders who understand emotional cycles can make more informed and profitable decisions.
+##  Key Insights
+- High-profit traders perform better during **Fear** conditions
+- Low-profit traders are more active during **Greed** phases
+- Extreme Fear conditions show lower profitability and higher risk
+- Market sentiment strongly influences trader decision-making
 
 
-## 🔗 Future Improvements
-- Add machine learning model for prediction
-- Build real-time dashboard
-- Automate trading strategies
+
+##  Strategy Recommendations
+- Apply **contrarian strategy**: trade during Fear, avoid Greed-driven decisions
+- Reduce trading activity in Extreme Fear conditions
+- Focus on disciplined, data-driven trading rather than emotional reactions
 
 
-## 👤 Author
+
+##  Future Improvements
+- Build predictive model for trader profitability
+- Cluster traders into behavioral groups
+- Develop real-time trading dashboard
+
+
+
+##  Author
 Swapnil Datir
